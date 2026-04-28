@@ -1,0 +1,54 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: internverse-backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/internverse?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: BV#RS+s7
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+  # Email Configuration - Uncomment and configure to enable email notifications
+  # Example for Gmail SMTP:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: your-email@gmail.com
+    password: your-app-password
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+      mail.smtp.starttls.required: true
+    
+  # Example for Other Email Providers:
+  # mail:
+  #   host: smtp.office365.com
+  #   port: 587
+  #   username: your-email@outlook.com
+  #   password: your-password
+  #   properties:
+  #     mail.smtp.auth: true
+  #     mail.smtp.starttls.enable: true
+
+internverse:
+  jwt:
+    secret: "change-this-to-a-long-random-string-in-production-at-least-32-chars"
+    expiration-ms: 86400000
+  upload-dir: ./uploads
+  public-base-url: http://localhost:8080
+  mail:
+    enabled: true
+
+logging:
+  level:
+    org.springframework.security: INFO
+

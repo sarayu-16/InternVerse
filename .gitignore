@@ -1,0 +1,16 @@
+# Backend
+internverse-backend/target/
+internverse-backend/.idea/
+internverse-backend/*.iml
+internverse-backend/uploads/
+
+# Frontend
+internverse-frontend/node_modules/
+internverse-frontend/dist/
+internverse-frontend/.env
+internverse-frontend/.env.local
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+*.log
