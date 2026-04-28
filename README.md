@@ -6,12 +6,13 @@ Built using Spring Boot (Backend) and React (Frontend) with secure authenticatio
 
 📁 Project Structure
 InternVerse/
-├── internverse-backend/     # Spring Boot REST API (Java 17)
-├── internverse-frontend/    # React + Vite frontend
-├── database/schema.sql      # MySQL schema (optional)
+├── internverse-backend/ # Spring Boot REST API (Java 17)
+├── internverse-frontend/ # React + Vite frontend
+├── database/schema.sql # MySQL schema (optional)
 ├── docs/
-│   ├── API_ENDPOINTS.md     # API documentation
-│   └── DEPLOYMENT.md        # Deployment guide
+│ ├── API_ENDPOINTS.md # API documentation
+│ └── DEPLOYMENT.md # Deployment guide
+
 🛠️ Tech Stack
 Backend
 Spring Boot 3
